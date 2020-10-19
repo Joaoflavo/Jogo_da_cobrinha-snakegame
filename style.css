@@ -1,0 +1,81 @@
+@media print {
+    /* print style sheets go here */
+  }
+  
+  @import url(print.css) print;
+
+  @media (query) {
+    /* CSS Rules used when query matches */
+  }
+@media screen and (max-width:300px){
+    .body{
+        width: 100%;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+    h1 {
+      color: fuchsia;
+    }
+
+    .desc:after {
+      content:" In fact, it's between 500px and 600px wide.";
+    }
+  }
+</style>
+
+@media screen and (max-width:700px){
+    .body{
+        width: 100%;
+    }
+}
+@media screen and (min-width:1000px){
+    .body{
+        width: 100%;
+    }
+}
+
+body{
+padding-top: 20px;
+display: flex;
+justify-content: center;
+border: 10px solid;
+align-items: center;
+width: 100%;
+height: 100%;
+flex-direction: column;
+font-family: 16'Champignon';
+}
+
+button{
+  font-family: 16 Champignon;
+  padding: 4vh;
+  margin-top: 2vh;
+  background-color: rgb(47, 0, 255);
+  color: white;
+  border: 3px solid;
+  border-radius: 3vh;
+  cursor: pointer;
+
+}
+
+button:hover{
+  cursor: pointer;
+  background-color: #ffffff;
+  color: rgb(245, 189, 35);
+  border: 1px solid rgb(0, 0, 0);  
+}
+.bg-footer{
+    padding: 30px;
+    border: 5px solid goldenrod;
+    align-items: center;
+    font: 25px Champignon;
+    background-color: red;
+    color: white;
+    
+  }
+  .fa-medal{
+      cursor: pointer;
+      text-align: left;
+      text-decoration: solid;
+  }
